@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <style type="text/css">a {text-decoration: none}</style> -->
+	<!-- <link rel="stylesheet" type="IMG" href="div_IMG.CSS"> -->
+	<style>
+	div.nav-bar {
+    position: relative;
+    background-color: #1A1919;
+    padding: 10px 20px;
+    height: 47px;
+    width: 97%;
+    color: white;
+	}
+	div.nav-bar-left {
+    float: left;
+    margin-top: 16px;
+    margin-left: 120px;
+    font-size: 12px;
+
+	}
+	div.nav-bar-right {
+    margin-left: 32%;
+    /* border: 2px solid red; */
+    width: 60%;
+	}
+	div.button {
+    position: absolute;
+    border: 1.5px solid #fefefe;
+    width: 150px;
+    height: 36px;
+    font-size: 12px;
+    right: 2%;
+    top: 22%;
+    box-shadow: 0.9px 1px #fefefe;
+    font-weight: bold;
+}
+
+	#featured-area{display: inline-block;
+				padding-top: 20px;
+    			height: 400px;
+    			background: #fefefe url(//d3fi4quwef5jrj.cloudfront.net/assets/blog-hero-f267ca4….jpg) 
+    			center center no-repeat;
+    			background-size: cover;
+    			position: relative;
+	}
+
+	section.content{
+ 	background-image:linear-gradient(
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.6)
+    ), url('https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/677/big/rawpixel-com-358750-unsplash.jpg?1519420222');
+  background-size:cover;
+  background-position:0px 0px;
+  opacity:1;
+  /*filter: brightness(79%)*/;
+
+
+  height:404px;
+ width:100%;
+ 
+   }
+	
+	
+
+	/*#brimage{background-size: cover;
+			width:100%;
+			height: 400px;
+		}*/
+
+	.img{background-color: rgb(244, 246, 247);
+		border: none;
+		/*width: 398px;*/
+		width: 355px;
+		height: 460px;
+		float: left;
+		margin: 10px;
+		padding: 10px;
+		}
+
+	.descr{padding: 15px;
+		   font-family: "DIN Next W01 Light", Arial, sans-serif;
+		   text-align: left;
+		   position:relative;
+		   bottom: 25px;
+
+
+	}
+
+	h6{float:right;
+	}
+	.date{padding-bottom: 30px;
+
+	}
+	/*.dateleft{position:relative;
+			  right: 130px;
+			  bottom: 20px;
+	}*/
+	/*.authorright{position:relative;
+				 right: 3px;
+				 bottom: 20px;
+	}*/
+
+	.readmore{position:relative;
+			  right: 258px;
+			  bottom: 15px;
+	}
+	.her{position:relative;
+		 right: 10px;
+		 bottom: 10px;
+	}
+	.h3link{text-decoration: none;}
+	/*p{font-family: "DIN Next W01 Light", Arial, sans-serif;
+    font-size: 1.4em;}*/
+    footer {
+    padding: 70px 0;
+    background: #1A1919;
+    color: #fefefe;
+    clear: both;
+    display: block;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="nav-bar">
+		<!-- left side of the nav bar -->
+		<div class="nav-bar-left">
+
+			<!--the Logo of NYCDA was obatined from the source code of the nycda.com website  -->
+			<svg title="NYCDA" viewBox="0 0 112.475 39.181" xmlns="http://www.w3.org/2000/svg">
+				<path class="a" d="M49.245,20.13H52.31V17.059h.847V20.13h3.065v.841H53.156v3.045H52.31V20.971H49.245Z"></path>
+				<path class="a" d="M7.878,33.979c0,2.549.88,4.124,4.124,5.1v.092c-6.21.185-7.832-1.761-7.832-6.812V24.711c0-1.576.093-2.873-1.483-3.985A7.4,7.4,0,0,0,0,19.567v-.093a4.843,4.843,0,0,0,3.1-1.344c1.112-1.159,1.066-2.085,1.066-3.476V6.036c0-1.76.185-3.661,1.946-4.819C7.924.012,9.731.012,12,.012V.1c-3.336.927-4.124,2.456-4.124,5.1v8.666c0,2.965-.742,4.865-4.634,5.606v.093c4.032.88,4.634,3.1,4.634,6.395Z"></path>
+				<path class="a" d="M104.6,5.2c0-2.549-.88-4.124-4.124-5.1V.012c6.21-.185,7.832,1.761,7.832,6.812V14.47c0,1.576-.093,2.873,1.482,3.985a7.4,7.4,0,0,0,2.688,1.158v.093a4.841,4.841,0,0,0-3.1,1.344c-1.112,1.158-1.066,2.085-1.066,3.475v8.619c0,1.761-.186,3.661-1.946,4.819-1.807,1.2-3.614,1.2-5.886,1.2v-.092c3.337-.927,4.124-2.456,4.124-5.1V25.313c0-2.966.742-4.866,4.634-5.607v-.093c-4.032-.88-4.634-3.1-4.634-6.395Z"></path>
+				<path class="a" d="M19.228,5.968v.42H16.783v6.1h-.509v-6.1H13.829v-.42Z"></path>
+				<path class="a" d="M20.32,5.968V8.941h.019a1.622,1.622,0,0,1,1.414-.831,1.511,1.511,0,0,1,1.162.467,1.812,1.812,0,0,1,.434,1.283v2.627h-.457V10.042q0-1.484-1.167-1.484a1.645,1.645,0,0,0-1.4.919v3.01h-.457V5.968Z"></path>
+				<path class="a" d="M28.206,10.182H24.823a1.8,1.8,0,0,0-.014.224,1.634,1.634,0,0,0,.513,1.218,1.682,1.682,0,0,0,1.213.5,2.5,2.5,0,0,0,1.6-.639V12a2.634,2.634,0,0,1-1.652.569,2.018,2.018,0,0,1-1.535-.644,2.292,2.292,0,0,1-.607-1.638,2.237,2.237,0,0,1,.56-1.561,1.912,1.912,0,0,1,2.758-.061A2.061,2.061,0,0,1,28.206,10.182Zm-3.322-.369h2.781q-.242-1.255-1.357-1.255a1.355,1.355,0,0,0-.912.329A1.6,1.6,0,0,0,24.884,9.814Z"></path>
+				<path class="a" d="M37.81,5.968v6.519h-.415l-4.956-5.7v5.7h-.5V5.968h.427l4.944,5.7v-5.7Z"></path>
+				<path class="a" d="M42.808,10.182H39.424a1.8,1.8,0,0,0-.014.224,1.632,1.632,0,0,0,.513,1.218,1.681,1.681,0,0,0,1.213.5,2.5,2.5,0,0,0,1.6-.639V12a2.637,2.637,0,0,1-1.652.569,2.02,2.02,0,0,1-1.536-.644,2.3,2.3,0,0,1-.607-1.638,2.237,2.237,0,0,1,.56-1.561,1.913,1.913,0,0,1,2.758-.061A2.064,2.064,0,0,1,42.808,10.182Zm-3.323-.369h2.781q-.243-1.255-1.358-1.255A1.358,1.358,0,0,0,40,8.887,1.611,1.611,0,0,0,39.485,9.814Z"></path>
+				<path class="a" d="M49.9,8.194l-1.856,4.377H47.83L46.51,9.086l-1.332,3.486h-.206L43.134,8.194h.451l1.465,3.5,1.347-3.5h.249l1.306,3.5,1.5-3.5Z"></path>
+				<path class="a" d="M56.695,5.968,54.161,8.988v3.5h-.5v-3.5L51.123,5.968h.609l2.18,2.583L56.08,5.968Z"></path>
+				<path class="a" d="M57.945,8.11A2.084,2.084,0,0,1,59.5,8.75a2.2,2.2,0,0,1,.623,1.6,2.182,2.182,0,0,1-.623,1.589,2.225,2.225,0,0,1-3.117,0,2.173,2.173,0,0,1-.628-1.589,2.188,2.188,0,0,1,.628-1.6A2.1,2.1,0,0,1,57.945,8.11Zm0,4.013a1.6,1.6,0,0,0,1.208-.507,1.761,1.761,0,0,0,.485-1.271,1.776,1.776,0,0,0-.488-1.274,1.6,1.6,0,0,0-1.206-.513,1.616,1.616,0,0,0-1.216.509,1.774,1.774,0,0,0-.488,1.279,1.759,1.759,0,0,0,.488,1.271A1.619,1.619,0,0,0,57.945,12.123Z"></path>
+				<path class="a" d="M64.1,8.619l-.266.429a1.5,1.5,0,0,0-.864-.49q-.644,0-1.376,1.232v2.7h-.457V8.194h.457V9.324h.019q.77-1.213,1.5-1.213A1.6,1.6,0,0,1,64.1,8.619Z"></path>
+				<path class="a" d="M65.122,5.968v6.519h-.457V5.968ZM68.16,8.194l-2.348,2.037,2.712,2.256H67.9l-2.709-2.254,2.371-2.039Z"></path>
+				<path class="a" d="M63.456,26.628l3.014,6.566h-.529L64.909,30.94H61.722l-1.027,2.254h-.529l3.014-6.566Zm1.262,3.892-1.405-3.07-1.4,3.07Z"></path>
+				<path class="a" d="M70.815,29.027v.509a2.815,2.815,0,0,0-1.116-.271,1.5,1.5,0,0,0-1.169.5,1.862,1.862,0,0,0-.45,1.3,1.806,1.806,0,0,0,.45,1.29,1.578,1.578,0,0,0,1.206.478,3.063,3.063,0,0,0,1.157-.247v.476a3.73,3.73,0,0,1-1.195.219,2.03,2.03,0,0,1-1.524-.6,2.155,2.155,0,0,1-.58-1.568,2.359,2.359,0,0,1,.585-1.654,1.936,1.936,0,0,1,1.5-.642A3.707,3.707,0,0,1,70.815,29.027Z"></path>
+				<path class="a" d="M75.892,32.447v.383a1.809,1.809,0,0,1-.868.448.233.233,0,0,1-.22-.1,1.191,1.191,0,0,1-.088-.427,2.179,2.179,0,0,1-1.344.532,1.15,1.15,0,0,1-.821-.317,1.02,1.02,0,0,1-.336-.77,1.243,1.243,0,0,1,.648-1.1,3.913,3.913,0,0,1,1.853-.464v-.546q0-.878-.952-.877a2.2,2.2,0,0,0-1.312.546v-.471a2.621,2.621,0,0,1,1.386-.457,1.543,1.543,0,0,1,.961.287.981.981,0,0,1,.378.833v2.674c0,.146.034.219.1.219A1.674,1.674,0,0,0,75.892,32.447Zm-1.176-.1V31.005a2.642,2.642,0,0,0-1.464.311,1,1,0,0,0-.58.875.634.634,0,0,0,.243.5.905.905,0,0,0,.607.205A1.8,1.8,0,0,0,74.716,32.345Z"></path>
+				<path class="a" d="M80.931,26.675v6.519h-.462v-.336a2.14,2.14,0,0,1-1.269.42,2.065,2.065,0,0,1-1.542-.646,2.34,2.34,0,0,1-.009-3.18,2.075,2.075,0,0,1,1.551-.635,2.8,2.8,0,0,1,1.269.345V26.675Zm-.462,5.763V29.666a2.267,2.267,0,0,0-1.251-.4A1.636,1.636,0,0,0,78,29.757a1.728,1.728,0,0,0-.48,1.257,1.766,1.766,0,0,0,.513,1.3,1.731,1.731,0,0,0,1.283.518A1.992,1.992,0,0,0,80.469,32.438Z"></path>
+				<path class="a" d="M86.452,30.889H83.069a1.8,1.8,0,0,0-.014.224,1.632,1.632,0,0,0,.513,1.218,1.681,1.681,0,0,0,1.213.5,2.5,2.5,0,0,0,1.6-.639v.518a2.637,2.637,0,0,1-1.652.569,2.02,2.02,0,0,1-1.536-.644A2.292,2.292,0,0,1,82.583,31a2.238,2.238,0,0,1,.56-1.561,1.913,1.913,0,0,1,2.758-.06A2.063,2.063,0,0,1,86.452,30.889ZM83.13,30.52h2.781q-.243-1.255-1.358-1.255a1.36,1.36,0,0,0-.912.329A1.611,1.611,0,0,0,83.13,30.52Z"></path>
+				<path class="a" d="M88.5,28.9v.756h.019a1.564,1.564,0,0,1,1.368-.84,1.415,1.415,0,0,1,1.386,1.031,1.745,1.745,0,0,1,1.491-1.031,1.352,1.352,0,0,1,1.077.476,1.871,1.871,0,0,1,.41,1.265v2.637h-.457V30.758a1.808,1.808,0,0,0-.294-1.094.962.962,0,0,0-.824-.4,1.063,1.063,0,0,0-.69.238,2.877,2.877,0,0,0-.6.765v2.926h-.462V30.749a1.733,1.733,0,0,0-.305-1.1.993.993,0,0,0-.819-.385,1.546,1.546,0,0,0-1.293.919v3.01h-.457V28.9Z"></path>
+				<path class="a" d="M99.429,28.9l-3.213,6.491h-.468l1.5-3.032L95.44,28.9h.48l1.557,3,1.484-3Z"></path>
+				<path class="a" d="M20.162,15.73a.493.493,0,0,1,.193-.262.7.7,0,0,1,.358-.075.445.445,0,0,1,.358.124.858.858,0,0,1,.1.509q0,.675.014,1.257t.014.506a.638.638,0,0,1-.11.437.537.537,0,0,1-.392.114q-.454,0-.592-.647-.048-.193-.075-.3a1.409,1.409,0,0,0-.627-.843,2.062,2.062,0,0,0-1.163-.327,2.409,2.409,0,0,0-1.956.892,3.64,3.64,0,0,0-.737,2.393A3.606,3.606,0,0,0,16.3,21.9a2.445,2.445,0,0,0,1.972.891,3.05,3.05,0,0,0,.813-.113,3.553,3.553,0,0,0,.812-.341,4.645,4.645,0,0,0,.509-.327,1.025,1.025,0,0,1,.462-.231.506.506,0,0,1,.361.141.462.462,0,0,1,.148.348.6.6,0,0,1-.162.4,2.755,2.755,0,0,1-.6.465,4.577,4.577,0,0,1-1.164.558,4.2,4.2,0,0,1-1.233.179,3.657,3.657,0,0,1-2.809-1.2A4.357,4.357,0,0,1,14.3,19.592a4.385,4.385,0,0,1,1.122-3.078,3.667,3.667,0,0,1,2.823-1.226,4.063,4.063,0,0,1,.926.11A6.178,6.178,0,0,1,20.162,15.73Z"></path>
+				<path class="a" d="M29.195,20.494a3.146,3.146,0,0,1-1.005,2.41,3.676,3.676,0,0,1-2.61.936,3.665,3.665,0,0,1-2.6-.936,3.146,3.146,0,0,1-1.005-2.41,3.134,3.134,0,0,1,1.005-2.406,3.673,3.673,0,0,1,2.6-.933,3.681,3.681,0,0,1,2.606.936A3.134,3.134,0,0,1,29.195,20.494Zm-3.615,2.383a2.367,2.367,0,0,0,1.738-.672,2.5,2.5,0,0,0,0-3.429,2.554,2.554,0,0,0-3.467,0,2.516,2.516,0,0,0,0,3.432A2.362,2.362,0,0,0,25.579,22.877Z"></path>
+				<path class="a" d="M36.114,23.669a.248.248,0,0,1-.2-.073.468.468,0,0,1-.059-.279v-.565a2.8,2.8,0,0,1-1.033.8,3.166,3.166,0,0,1-1.342.286,2.882,2.882,0,0,1-2.18-.926,3.466,3.466,0,0,1,.059-4.675,3.152,3.152,0,0,1,2.334-.947,3.1,3.1,0,0,1,1.273.252,2.657,2.657,0,0,1,.971.74V15.647H35.57a1.773,1.773,0,0,1-.775-.106.418.418,0,0,1-.176-.389.469.469,0,0,1,.141-.372.6.6,0,0,1,.41-.123h1.411a.506.506,0,0,1,.3.069.245.245,0,0,1,.093.213V22.7h.31a.831.831,0,0,1,.49.114.425.425,0,0,1,.151.361.5.5,0,0,1-.131.365.475.475,0,0,1-.351.131ZM31.6,20.577a2.1,2.1,0,0,0,.613,1.556,2.121,2.121,0,0,0,1.557.606,2.089,2.089,0,0,0,1.563-.63,2.2,2.2,0,0,0,.613-1.6,2.159,2.159,0,0,0-.609-1.577,2.1,2.1,0,0,0-1.566-.619,2.074,2.074,0,0,0-1.57.627A2.274,2.274,0,0,0,31.6,20.577Z"></path>
+				<path class="a" d="M39.742,20.791a2.093,2.093,0,0,0,.671,1.532,2.466,2.466,0,0,0,1.683.541,4.289,4.289,0,0,0,1.756-.431A4.748,4.748,0,0,1,45,22a.483.483,0,0,1,.344.131.43.43,0,0,1,.137.324.543.543,0,0,1-.144.364,1.507,1.507,0,0,1-.462.324,7,7,0,0,1-1.422.517A6.146,6.146,0,0,1,42,23.84a3.476,3.476,0,0,1-2.513-.905,3.17,3.17,0,0,1-.943-2.4,3.234,3.234,0,0,1,1-2.465,3.631,3.631,0,0,1,2.6-.943,3.419,3.419,0,0,1,2.41.882,2.8,2.8,0,0,1,.957,2.134.647.647,0,0,1-.161.517,1.743,1.743,0,0,1-.878.131h-4.73Zm.034-.9h4.482a2,2,0,0,0-.685-1.318,2.119,2.119,0,0,0-1.429-.5,2.455,2.455,0,0,0-1.542.482A2.279,2.279,0,0,0,39.776,19.888Z"></path>
+				<path class="a" d="M61.366,23.669h-1.4a.527.527,0,0,1-.382-.124.5.5,0,0,1-.127-.372.423.423,0,0,1,.148-.372,1.057,1.057,0,0,1,.562-.1h.124v-6.2h-.11a1.045,1.045,0,0,1-.568-.11A.44.44,0,0,1,59.458,16a.494.494,0,0,1,.127-.375.557.557,0,0,1,.4-.121h2.906a3.54,3.54,0,0,1,2.734,1.1,4.231,4.231,0,0,1,1.019,2.985,4.83,4.83,0,0,1-.293,1.7,4.049,4.049,0,0,1-.85,1.377,3.024,3.024,0,0,1-1.257.782,6.187,6.187,0,0,1-1.9.244c-.091,0-.246,0-.464-.014S61.484,23.669,61.366,23.669Zm0-.971c.147.014.292.025.437.031s.286.01.423.01a3.483,3.483,0,0,0,2.483-.757,3.186,3.186,0,0,0,.788-2.39,3.154,3.154,0,0,0-.792-2.386,3.609,3.609,0,0,0-2.534-.747q-.324,0-.492.007t-.313.027Z"></path>
+				<path class="a" d="M68.985,20.791a2.09,2.09,0,0,0,.672,1.532,2.464,2.464,0,0,0,1.683.541,4.286,4.286,0,0,0,1.755-.431A4.748,4.748,0,0,1,74.246,22a.48.48,0,0,1,.344.131.431.431,0,0,1,.138.324.54.54,0,0,1-.145.364,1.513,1.513,0,0,1-.461.324,7,7,0,0,1-1.423.517,6.141,6.141,0,0,1-1.456.179,3.476,3.476,0,0,1-2.513-.905,3.173,3.173,0,0,1-.943-2.4,3.237,3.237,0,0,1,1-2.465,3.634,3.634,0,0,1,2.6-.943,3.419,3.419,0,0,1,2.41.882,2.8,2.8,0,0,1,.957,2.134.647.647,0,0,1-.162.517,1.739,1.739,0,0,1-.877.131H68.985Zm.035-.9H73.5a2,2,0,0,0-.685-1.318,2.122,2.122,0,0,0-1.43-.5,2.451,2.451,0,0,0-1.542.482A2.275,2.275,0,0,0,69.019,19.888Z"></path>
+				<path class="a" d="M75.411,23.173V21.947a.71.71,0,0,1,.1-.434.4.4,0,0,1,.334-.131q.257,0,.406.385a2.077,2.077,0,0,0,.181.351,1.8,1.8,0,0,0,.775.6,2.791,2.791,0,0,0,1.131.224,1.745,1.745,0,0,0,1.062-.3.924.924,0,0,0,.4-.778.763.763,0,0,0-.322-.7,2.156,2.156,0,0,0-1.1-.207h-.344a3.261,3.261,0,0,1-1.943-.489,1.648,1.648,0,0,1-.669-1.419,1.678,1.678,0,0,1,.653-1.411,2.947,2.947,0,0,1,1.833-.5,3.44,3.44,0,0,1,.982.148q.5.148.524.148a.637.637,0,0,0,.263-.134.665.665,0,0,1,.382-.134.343.343,0,0,1,.315.172,1.026,1.026,0,0,1,.1.516v.806a1.045,1.045,0,0,1-.1.526.346.346,0,0,1-.318.162q-.188,0-.463-.351a4.676,4.676,0,0,0-.318-.365,2.063,2.063,0,0,0-.706-.485A2.4,2.4,0,0,0,77.692,18a1.48,1.48,0,0,0-.947.286.89.89,0,0,0-.359.727.642.642,0,0,0,.368.62,4.476,4.476,0,0,0,1.587.213,3.259,3.259,0,0,1,1.9.5,1.7,1.7,0,0,1,.6,1.435,1.846,1.846,0,0,1-.663,1.487,2.682,2.682,0,0,1-1.787.558,4.877,4.877,0,0,1-.793-.072q-.438-.072-1.1-.244a3.04,3.04,0,0,1-.374.238.613.613,0,0,1-.263.079.379.379,0,0,1-.334-.169A.846.846,0,0,1,75.411,23.173Z"></path>
+				<path class="a" d="M83.61,22.7h.6a.583.583,0,0,1,.4.114.462.462,0,0,1,.127.361.5.5,0,0,1-.121.389.68.68,0,0,1-.444.107H82.011a.6.6,0,0,1-.413-.124.473.473,0,0,1-.138-.372.436.436,0,0,1,.145-.358.682.682,0,0,1,.434-.117h.526V18.284h-.518a.639.639,0,0,1-.43-.127.537.537,0,0,1-.011-.73.614.614,0,0,1,.414-.12h1.192a.5.5,0,0,1,.293.075.242.242,0,0,1,.106.207ZM82.336,15.83a1.134,1.134,0,0,1,.134-.691A.818.818,0,0,1,83.046,15a.917.917,0,0,1,.564.12q.139.12.138.567c0,.292-.043.473-.127.542a1.024,1.024,0,0,1-.575.1,1.116,1.116,0,0,1-.575-.1A.476.476,0,0,1,82.336,15.83Z"></path>
+				<path class="a" d="M90.862,23.3a6.632,6.632,0,0,1-.1,1.367,1.84,1.84,0,0,1-.33.706,2.383,2.383,0,0,1-1.081.775,4.6,4.6,0,0,1-1.639.265,3.179,3.179,0,0,1-1.146-.151.506.506,0,0,1-.361-.482.5.5,0,0,1,.176-.375.592.592,0,0,1,.417-.162,4.79,4.79,0,0,1,.572.051,4.714,4.714,0,0,0,.585.052A1.884,1.884,0,0,0,89.4,24.88a2.37,2.37,0,0,0,.428-1.6v-.833a2.658,2.658,0,0,1-.93.716,3.094,3.094,0,0,1-3.3-.63,3.212,3.212,0,0,1,.024-4.365,2.913,2.913,0,0,1,2.148-.871,2.85,2.85,0,0,1,1.037.2,4.125,4.125,0,0,1,1.022.6v-.5a.248.248,0,0,1,.092-.213.5.5,0,0,1,.293-.069h1.04a.613.613,0,0,1,.413.12.455.455,0,0,1,.137.361.422.422,0,0,1-.172.386,1.314,1.314,0,0,1-.647.11h-.124Zm-2.988-4.978a2.022,2.022,0,0,0-1.474.557,2.1,2.1,0,0,0,0,2.882,2.21,2.21,0,0,0,2.944,0,2.085,2.085,0,0,0,0-2.874A2.012,2.012,0,0,0,87.874,18.325Z"></path>
+				<path class="a" d="M93.465,22.7V18.284h-.132a1.312,1.312,0,0,1-.643-.11.419.419,0,0,1-.176-.386.439.439,0,0,1,.144-.368.762.762,0,0,1,.468-.114h.984a.485.485,0,0,1,.289.075.242.242,0,0,1,.1.207v.468a3.781,3.781,0,0,1,1-.692,2.438,2.438,0,0,1,1.021-.224,2.113,2.113,0,0,1,1.636.647,2.544,2.544,0,0,1,.6,1.79V22.7h.323a.843.843,0,0,1,.5.114.423.423,0,0,1,.151.361.434.434,0,0,1-.162.382,1.053,1.053,0,0,1-.574.114H97.464a.993.993,0,0,1-.564-.1.5.5,0,0,1-.124-.393.429.429,0,0,1,.144-.372,1,1,0,0,1,.544-.1H97.7V19.833A1.83,1.83,0,0,0,97.34,18.6a1.322,1.322,0,0,0-1.06-.423,1.814,1.814,0,0,0-1.24.475,1.51,1.51,0,0,0-.537,1.177V22.7h.241a1.033,1.033,0,0,1,.557.1.427.427,0,0,1,.144.372.5.5,0,0,1-.123.393,1.108,1.108,0,0,1-.607.1H93.092a.639.639,0,0,1-.423-.121.467.467,0,0,1-.141-.375.4.4,0,0,1,.162-.375,1.334,1.334,0,0,1,.63-.1Z"></path>
+			</svg>
+
+			<ul>
+				<li>Your Campus:<span class="location">New York City</span></li>
+			</ul>
+		</div><!--end of nav-bar-left-->
+
+		<!--Right side of Navigation Bar  -->
+	
+		<!--Main Menu-->
+		<div class="nav-bar-right">
+			<ul>
+				<li><a>Students Services</a> 
+					<!--Drop Down Menu -->
+					<div class="menu">
+						<ul>
+							<li><a>What We Do</a></li>
+							<li><a>What You'll Get</a></li>
+							<li><a>Student Coaching</a></li>
+							<li><a>Student Stories</a></li>
+							<li><a>Financing</a></li>
+							<li><a>Holidays</a></li>
+						</ul>
+					</div>
+				</li><!--end of first main menu-->
+			
+			
+
+				<!-- 2 Main Menu-->
+				<li><a>Program<span>+Courses</span></a>
+				<!--Drop Down Menu -->
+					<div class="menu">
+						<ul>
+					
+							<li><a>All Programs</a></li>
+
+							<li><a>Full Time Intensives</a>
+								<!-- More menu-->
+								<ul class="submenu">
+									<li>Software Engineering Intensive</li>
+									<li>NYC Web Development Fellowship</li>
+									<li>Web Development Intensive</li>
+									<li>UX Design Intensive</li>
+
+								</ul>
+							</li>
+
+							<li><a>Part Time Intensives</a>
+								<!-- More menu-->
+								<ul>
+									<li>Evening Javascript</li>
+									<li>Evening UX</li>
+								</ul>
+							</li>
+
+							<li><a>Workshops</a>
+								<!-- More menu-->
+								<ul>
+									<li>100</li>
+									<li>101</li>
+									<li>102</li>
+								</ul>
+							</li>
+							<li><a>Youth</a></li>
+						</ul>
+					</div><!--end of menu div-->
+				</li>
+	
+
+				<!--Main Menu-->
+				<li><a>Locations</a>
+					<!--Drop down menu-->
+					<div class="menu">
+						<ul>
+							<li><a>New York City</a>
+							</li><li><a>Philadelphia</a></li>
+							<li><a>Salt Lake City</a></li>
+							<li><a>Washington, D.C</a></li>
+							
+						</ul>
+					</div>
+				</li>
+		
+		
+				<!--Main Menu-->
+				<li><a>Events</a>
+				<!--Drop Down Menu-->
+					<div class="menu">
+						<ul>
+							<li><a>In Person</a></li>
+							<li><a>Webinars</a></li>
+						</ul>
+					</div>
+
+				</li>
+		
+				<!--Main Menu-->
+				
+				<li><a id="blog">Blog</a></li>
+			</ul>
+		</div>
+		<div class="nav-bar-right">
+			<ul>
+				<li><a>Students Services</a> 
+					<!--Drop Down Menu -->
+					<div class="menu">
+						<ul>
+							<li><a>What We Do</a></li>
+							<li><a>What You'll Get</a></li>
+							<li><a>Student Coaching</a></li>
+							<li><a>Student Stories</a></li>
+							<li><a>Financing</a></li>
+							<li><a>Holidays</a></li>
+						</ul>
+					</div>
+				</li><!--end of first main menu-->
+			
+			
+
+				<!-- 2 Main Menu-->
+				<li><a>Program<span>+Courses</span></a>
+				<!--Drop Down Menu -->
+					<div class="menu">
+						<ul>
+					
+							<li><a>All Programs</a></li>
+
+							<li><a>Full Time Intensives</a>
+								<!-- More menu-->
+								<ul class="submenu">
+									<li>Software Engineering Intensive</li>
+									<li>NYC Web Development Fellowship</li>
+									<li>Web Development Intensive</li>
+									<li>UX Design Intensive</li>
+
+								</ul>
+							</li>
+
+							<li><a>Part Time Intensives</a>
+								<!-- More menu-->
+								<ul>
+									<li>Evening Javascript</li>
+									<li>Evening UX</li>
+								</ul>
+							</li>
+
+							<li><a>Workshops</a>
+								<!-- More menu-->
+								<ul>
+									<li>100</li>
+									<li>101</li>
+									<li>102</li>
+								</ul>
+							</li>
+							<li><a>Youth</a></li>
+						</ul>
+					</div><!--end of menu div-->
+				</li>
+	
+
+				<!--Main Menu-->
+				<li><a>Locations</a>
+					<!--Drop down menu-->
+					<div class="menu">
+						<ul>
+							<li><a>New York City</a>
+							</li><li><a>Philadelphia</a></li>
+							<li><a>Salt Lake City</a></li>
+							<li><a>Washington, D.C</a></li>
+							
+						</ul>
+					</div>
+				</li>
+		
+		
+				<!--Main Menu-->
+				<li><a>Events</a>
+				<!--Drop Down Menu-->
+					<div class="menu">
+						<ul>
+							<li><a>In Person</a></li>
+							<li><a>Webinars</a></li>
+						</ul>
+					</div>
+
+				</li>
+		
+				<!--Main Menu-->
+				
+				<li><a id="blog">Blog</a></li>
+			</ul>
+		</div><!--end of nav-bar-right-->
+
+
+		<div class="button">
+			<a>
+				STUDENT LOGIN
+			</a>
+		</div>
+	</div>
+
+	<section class="content">
+		<form>
+			<div class="search-box">
+				<input type="text" name="search" placeholder=" Search the blog"><span></span>
+			</div>
+			<!-- search icon -->
+			<div id="search-icon">
+			</div>
+	
+		</form>
+		<!-- contennts of the heading cover  -->
+		<div class="contents">
+			<h4 style="color:#ffcb04;">nycda blog featured post</h4>
+			<h2>
+				<a href="/blog/10-networking-tips-to-earn-a-paid-position-post-bootcamp-d6f05572587d47f58f6804bf304d79e0" style="text-decoration:none;color:white;font-size:35px">10 NETWORKING TIPS TO EARN A PAID<br> POSITION POST-BOOTCAMP
+				</a>
+			</h2>
+			<h5>Written by Clayton Wert on February 23,2018</h5>
+			<p>It's no secret that graduating from any coding bootcamp is a challenge. It will be one of the hardest <br>things that someone can do in their life.  What you might not know is t...
+			<span>
+				<a href="/blog/10-networking-tips-to-earn-a-paid-position-post-bootcamp-d6f05572587d47f58f6804bf304d79e0" style="color:#ffcb04;text-decoration:none">Read More<i class="fa fa-caret-right"></i>
+				</a>
+			</span>
+			
+		</p></div>
+	</section>
+
+	<div class= "img">
+
+		<div class="her">
+
+	<img src= "https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/676/small/SetApart.jpg?1518812490" width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class= "setdate">
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY MANNY PEREZ</h6>
+				<h6 class="dateleft" style= "position:relative; right: 145px;
+			  bottom: 20px;"> FEBRUARY 14, 2018</h6>
+				
+
+		</div> <!-- div for date -->
+		</div> <!-- div fo setdate -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/setting-yourself-apart-1485b493f6694638966bbba2a60e4245" style="text-decoration: none; color:inherit;">Setting Yourself Apart</a></h3>
+
+	<p> One of the most common concerns I hear from students as they near the end of an Intensive Course at NYCDA is the fact they are jumping into a compl...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/675/big/rochelle-nicole-84911.jpg?1516998978 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px;
+			  bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/674/small/andrew-neel-137513.jpg?1516221975 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+					<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/who-are-you-don-t-lose-yourself-at-a-coding-bootcamp-part-two-9fb07b6491d9466ba5afe80372ef9108" style="text-decoration: none; color:inherit;">Who are You? Don't Lose Yourself at a Coding Bootcamp: Part Two</a></h3>
+
+			
+	<p> Continued from last week's blog post. It can be very difficult to see ourselves objectively. I’d wager that most, if not all people have a degre...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img --><div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/673/small/heidi-sandstrom-466619_%281%29.jpg?1515619624 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class ="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/who-are-you-don-t-lose-yourself-at-a-coding-bootcamp-0ee36305df3f425f94c295c41ebaea63" style="text-decoration: none; color:inherit;">Who Are You? Don't Lose Yourself at a Coding Bootcamp: PART ONE</a></h3>
+
+			
+	<p> I’m a graduate of the New York Code + Design Academy (NYCDA) Web Development Intensive program and I have been employed here ever since. I have be...
+
+</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img --><div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/672/small/freelancer-above-in-apartment.jpg?1513795703 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/nycda-scholarship-salt-lake-city-f7e733fbf53b4db58a67d260b4657a22" style="text-decoration: none; color:inherit;">Announcing the NYCDA Scholarship in Salt Lake City</a></h3>
+
+			
+	<p> We've always been committed to supporting growing tech communities, and Salt Lake City is no exception. That's why we're offering two FULL schol...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<div class= "img">
+			
+			<div class="her">
+
+	<img src= https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/671/small/rawpixel-com-250087.jpg?1513367241 width= "375px" height="180px">
+
+		</div> <!-- div for her -->
+
+		<div class="date">
+
+		
+				<h6 class="authorright" style="position:relative; right: 15px;bottom: 20px;"> BY KRYSTAL KAPLAN</h6>
+				<h6 class="dateleft" style= "position:relative; right: 132px; bottom: 20px;"> JANUARY 26, 2018</h6>
+				
+
+
+		</div> <!-- div for date -->
+
+		<div class="descr">
+
+	<h3> <a href= "https://nycda.com/blog/you-graduated-now-what-9-things-for-bootcamp-grads-to-do-like-yesterday-ccc67d13711e45ada1e42747170b4ab5" style="text-decoration: none; color:inherit;">You graduated! Now what? 9 things for bootcamp grads to do, like, yesterday!</a></h3>
+
+			
+	<p> Throughout my experiences as a recruiter, teacher, career readiness program manager and success coach, I’ve seen graduates become overwhelmed post-...</p>
+	
+	<div class="readmore">
+
+	<h6> READ MORE</h6>
+
+		</div>	<!-- div for read more -->
+
+
+		</div> <!-- div for "descr" -->
+		</div> <!-- div for img -->
+		<footer>
+<div class="row">
+<div class="large-2 medium-6 columns small-12" id="quick-links">
+<ul>
+<li>
+<a href="/about">About</a>
+</li>
+<li>
+<a href="/team">Team</a>
+</li>
+<li>
+<a href="/corporate">Corporate</a>
+</li>
+<li>
+<a href="/careers">Careers</a>
+</li>
+<li>
+<a href="/contact">Contact Us</a>
+</li>
+<li>
+<a href="/faq">FAQ</a>
+</li>
+</ul>
+</div>
+<div class="large-2 medium-6 columns small-12" id="social-links">
+<ul>
+<li>
+<a class="facebook" href="https://www.facebook.com/TheNewYorkCodeDesignAcademy" target="_blank">
+<span>
+<svg height="15" viewBox="0 0 15 15" width="15">
+<path class="a" d="M14.172,0H.828A.828.828,0,0,0,0,.828V14.172A.828.828,0,0,0,.828,15H8.012V9.191H6.057V6.927H8.012V5.258a2.728,2.728,0,0,1,2.912-2.992,16.039,16.039,0,0,1,1.747.089V4.379h-1.2c-.94,0-1.122.447-1.122,1.1V6.927h2.242L12.3,9.191H10.35V15h3.822A.828.828,0,0,0,15,14.172V.828A.828.828,0,0,0,14.172,0Z"></path>
+</svg>
+</span>
+<span class="social">Facebook</span>
+</a>
+</li>
+<li>
+<a class="twitter" href="https://twitter.com/NYCodeDesign" target="_blank">
+<span>
+<svg height="13.412" viewBox="0 0 17.28 13.412" width="17.28">
+<path class="a" d="M17.28,1.587a7.326,7.326,0,0,1-2.035.534A3.43,3.43,0,0,0,16.8.247a7.264,7.264,0,0,1-2.251.821A3.623,3.623,0,0,0,11.964,0,3.469,3.469,0,0,0,8.418,3.386a3.243,3.243,0,0,0,.092.772A10.23,10.23,0,0,1,1.2.619a3.258,3.258,0,0,0-.479,1.7A3.348,3.348,0,0,0,2.3,5.14,3.662,3.662,0,0,1,.694,4.716V4.76A3.431,3.431,0,0,0,3.538,8.079,3.687,3.687,0,0,1,2.6,8.2a3.625,3.625,0,0,1-.667-.062,3.533,3.533,0,0,0,3.312,2.352,7.328,7.328,0,0,1-4.4,1.45A7.669,7.669,0,0,1,0,11.891a10.379,10.379,0,0,0,5.435,1.521A9.785,9.785,0,0,0,15.521,3.778c0-.147,0-.293-.01-.439A7.022,7.022,0,0,0,17.28,1.587Z"></path>
+</svg>
+</span>
+<span class="social">Twitter</span>
+</a>
+</li>
+<li>
+<a class="instagram" href="https://www.instagram.com/nycodedesign/" target="_blank">
+<span>
+<svg height="14.995" viewBox="0 0 14.995 14.995" width="14.995">
+<path class="a" d="M7.5,1.351c2,0,2.239.008,3.03.044a4.149,4.149,0,0,1,1.392.258,2.323,2.323,0,0,1,.862.561,2.323,2.323,0,0,1,.561.862A4.149,4.149,0,0,1,13.6,4.468c.036.791.044,1.028.044,3.03s-.008,2.239-.044,3.03a4.149,4.149,0,0,1-.258,1.392,2.483,2.483,0,0,1-1.423,1.423,4.149,4.149,0,0,1-1.392.258c-.79.036-1.028.044-3.03.044s-2.239-.008-3.03-.044a4.149,4.149,0,0,1-1.392-.258,2.323,2.323,0,0,1-.862-.561,2.323,2.323,0,0,1-.561-.862,4.149,4.149,0,0,1-.258-1.392C1.359,9.737,1.351,9.5,1.351,7.5s.008-2.239.044-3.03a4.149,4.149,0,0,1,.258-1.392,2.323,2.323,0,0,1,.561-.862,2.323,2.323,0,0,1,.862-.561,4.149,4.149,0,0,1,1.392-.258c.791-.036,1.028-.044,3.03-.044M7.5,0C5.461,0,5.206.009,4.406.045a5.5,5.5,0,0,0-1.82.349,3.675,3.675,0,0,0-1.328.865A3.675,3.675,0,0,0,.394,2.586a5.5,5.5,0,0,0-.349,1.82C.009,5.206,0,5.461,0,7.5s.009,2.292.045,3.091a5.5,5.5,0,0,0,.349,1.82,3.675,3.675,0,0,0,.865,1.328,3.675,3.675,0,0,0,1.328.865,5.5,5.5,0,0,0,1.82.349c.8.036,1.055.045,3.091.045s2.292-.009,3.091-.045a5.5,5.5,0,0,0,1.82-.349A3.834,3.834,0,0,0,14.6,12.409a5.5,5.5,0,0,0,.349-1.82c.036-.8.045-1.055.045-3.091s-.009-2.292-.045-3.091a5.5,5.5,0,0,0-.349-1.82,3.675,3.675,0,0,0-.865-1.328A3.675,3.675,0,0,0,12.409.394a5.5,5.5,0,0,0-1.82-.349C9.789.009,9.534,0,7.5,0Z"></path>
+<path class="a" d="M7.5,3.647a3.85,3.85,0,1,0,3.85,3.85A3.85,3.85,0,0,0,7.5,3.647ZM7.5,10A2.5,2.5,0,1,1,10,7.5,2.5,2.5,0,0,1,7.5,10Z"></path>
+<circle class="a" cx="11.5" cy="3.495" r="0.9"></circle>
+</svg>
+</span>
+<span class="social">Instagram</span>
+</a>
+</li>
+<li>
+<a class="linkedin" href="https://www.linkedin.com/company/new-york-code-design-academy" target="_blank">
+<span>
+<svg height="15.008" viewBox="0 0 15.008 15.008" width="15.008">
+<path class="a" d="M13.9,0H1.108A1.1,1.1,0,0,0,0,1.082V13.925a1.1,1.1,0,0,0,1.108,1.083H13.9a1.1,1.1,0,0,0,1.111-1.083V1.082A1.1,1.1,0,0,0,13.9,0ZM4.451,12.789H2.225V5.627H4.451ZM3.339,4.647a1.291,1.291,0,1,1,1.29-1.291A1.291,1.291,0,0,1,3.339,4.647Zm9.45,8.141H10.564V9.306c0-.831-.015-1.9-1.157-1.9-1.158,0-1.336.9-1.336,1.839v3.543H5.847V5.627H7.983v.979h.03a2.339,2.339,0,0,1,2.106-1.157c2.254,0,2.67,1.483,2.67,3.412Z"></path>
+</svg>
+</span>
+<span class="social">Linkedin</span>
+</a>
+</li>
+<li>
+<a class="youtube" href="https://www.youtube.com/channel/UCXjB-0AaNEY_3ORvF9ar_iw" target="_blank">
+<span>
+<svg height="12.001" viewBox="0 0 17.063 12.001" width="17.063">
+<path class="a" d="M6.769,3.42l4.043,2.7.567-.294Z"></path>
+<path class="b" d="M16.893,2.589A3.692,3.692,0,0,0,16.215.9a2.441,2.441,0,0,0-1.71-.723C12.117,0,8.535,0,8.535,0H8.528S4.946,0,2.558.173A2.441,2.441,0,0,0,.849.9,3.69,3.69,0,0,0,.171,2.589,25.805,25.805,0,0,0,0,5.351V6.645A25.805,25.805,0,0,0,.171,9.407,3.69,3.69,0,0,0,.849,11.1a2.893,2.893,0,0,0,1.881.729c1.365.131,5.8.171,5.8.171s3.586-.005,5.973-.178a2.441,2.441,0,0,0,1.71-.723,3.692,3.692,0,0,0,.678-1.694,25.841,25.841,0,0,0,.17-2.762V5.351A25.841,25.841,0,0,0,16.893,2.589ZM6.77,8.214V3.42L11.38,5.825Z"></path>
+</svg>
+</span>
+<span class="social">Youtube</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="large-3 medium-6 columns small-12 large-offset-1" id="contact-info">
+<address>
+The New York Code + Design Academy
+<br>
+90 John Street, Suite 404
+<br>
+New York, NY 10038
+<br>
+<br>
+<a href="tel:+18443222633">844-322-CODE (2633)</a>
+<br>
+<a href="mailto:info@nycda.com">info@nycda.com</a>
+<br>
+<span>
+©
+NYCDA 2018
+</span>
+<br>
+<br>
+</address>
+<div class="legal">
+<span><a href="/privacy-policy">Privacy Policy</a></span>
+<span>|</span>
+<span><a href="/terms-of-service">Terms of Service</a></span>
+</div>
+</div>
+<div class="large-4 medium-6 columns small-12" id="mailing-list">
+<span class="sign-up">Sign up for our mailing list.</span>
+<form action="//nycda.us5.list-manage.com/subscribe/post?u=463b0b46863d7742ed4674a3f&amp;amp;id=1d38762514" method="POST">
+<div class="row">
+<div class="large-12 columns">
+<label>
+<span class="hide">Email Address</span>
+<input type="email" name="EMAIL" id="EMAIL" placeholder="Email Address" required="required">
+</label>
+<input class="button small large-12" type="submit" value="Submit">
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="row">
+<div class="large-2 medium-6 columns small-12">
+<img id="bpss-logo" width="100px" src="https://d3fi4quwef5jrj.cloudfront.net/assets/bpss_gray-cc8c4daa5bb47428a78d58473b1db2e337e504aeac4eb687c2077f5585c99fcb.png" alt="Bpss gray cc8c4daa5bb47428a78d58473b1db2e337e504aeac4eb687c2077f5585c99fcb">
+</div>
+</div>
+</footer>
+</html>
