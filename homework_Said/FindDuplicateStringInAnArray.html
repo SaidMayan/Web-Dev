@@ -1,0 +1,23 @@
+<h1 id= "js"></h1>
+
+<script>
+
+// challenge: find duplicated items
+// if else statements can work but will take a long time.
+// compare all the items with all the items except itself.
+
+var array = ["Saturday", "Saturday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Monday"];
+
+// console.log(array[0])
+
+for(var i = 0; i < array.length; i++){
+	for (var j = i+1; j < array.length; j++){
+		if(array[i] === array[j]){
+			console.log("We have a match and it is" + " " + array[i]);
+		}
+	}
+}
+
+
+
+</script>
