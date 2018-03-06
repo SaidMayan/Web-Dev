@@ -1,0 +1,15 @@
+<script>
+	
+function primeOrNot(num) {
+  if (num < 2) return "not prime";
+  
+  for (var i = 2; i < num; i++) {
+    if (num % i == 0) return "not prime";
+  }
+  
+  return "prime";
+}
+
+console.log(primeOrNot(9));
+
+</script>
