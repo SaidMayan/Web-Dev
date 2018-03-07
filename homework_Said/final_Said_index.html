@@ -29,11 +29,15 @@
 	}
 	body{padding: 0;
 		 margin: 0;
+		 /*font-family: "tisa-pro", Georgia, serif;*/
 	}
 	#backgr{background-image:url("https://s-media-cache-ak0.pinimg.com/originals/94/6c/bb/946cbb6d12895a95cb3d2aa192bc8938.jpg");
-			background-size: cover;
 			height: 800px;
 			width: 100%;
+			background-attachment: fixed; /*parallax for bg image*/
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
 
 			}
 
@@ -45,7 +49,7 @@
 
 				}
 			}
-	.img{background-color: #F7F7F7;
+	.contentBox{/*background-color: #F7F7F7;*/
 		border: none;
 		/*width: 398px;*/
 		width: 355px;
@@ -55,15 +59,25 @@
 		padding: 10px;
 
 	}
+	.contentBox:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); 
+	}
 	.descr{padding: 15px;
-		   font-family: "DIN Next W01 Light", helvetica, sans-serif;
+		   /*font-family: "tisa-pro", Georgia, serif;*/
 		   text-align: left;
 		   position:relative;
 		   bottom: 25px;
+		   right: 20px;
+		   font: 600 18px/25px "circular-std", sans-serif;
+
+
 	}
+
 	h6{float:right;
 	}
 	.date{padding-bottom: 30px;
+		  font: 18px/26px "circular-std", sans-serif;
+		  color: #9b9b9b;
+
 	}
 	/*.dateleft{position:relative;
 			  right: 130px;
@@ -86,13 +100,31 @@
 				/*left: 43%;*/
 				text-align: center;
 	}
+	.videos{width: 100%;
+			height: 400px;
+			background-color: #DEDEDE;
+			float: left;
+			z-index: -1;
+			/*padding: 100px;*/
+	}
+
+	.video1{/*border:3px solid red;*/
+			padding:40px;
+
+	}
+
+	.video1 iframe{
+
+		padding-left:30px;
+	}
+	
 
 </style>
 </head>
 <body>
 	<div id="navBar">
 			<div id = "navBarLogo">
-			<h2 style= "color: #ffc3c3; font-family: Palatino Linotype', 'Book Antiqua', Palatino, serif;">NUDISTGUISE</h2>
+			<h2 style= "color: #ffc3c3; font-family: Palatino Linotype', 'Book Antiqua', Palatino, Serif;">NUDISTGUISE</h2>
 			</div> <!-- closing div for h2 nudistguise -->
 		
 		<ul class= "topBarInfo">
@@ -103,7 +135,7 @@
 	</div> <!-- div for top bar -->
 	<div id= "backgr"></div>
 
-	<div class= "img">
+	<div class= "contentBox">
 
 		<div class="her">
 
@@ -114,8 +146,8 @@
 		<div class= "setdate">
 		<div class="date">
 
-				<h6 class="dateleft" style= "position:relative; right: 242px;
-			  bottom: 20px;"> FEBRUARY 14, 2018</h6>
+				<h6 class="dateleft" style= "position:relative; left: 1px;
+			  bottom: 30px;"> FEBRUARY 14, 2018</h6>
 				
 
 		</div> <!-- div for date -->
@@ -135,8 +167,8 @@
 
 
 		</div> <!-- div for "descr" -->
-		</div> <!-- div for img -->
-		<div class= "img">
+		</div> <!-- div for contentBox -->
+		<div class= "contentBox">
 
 		<div class="her">
 
@@ -147,8 +179,8 @@
 		<div class= "setdate">
 		<div class="date">
 
-				<h6 class="dateleft" style= "position:relative; right: 242px;
-			  bottom: 20px;"> FEBRUARY 14, 2018</h6>
+				<h6 class="dateleft" style= "position:relative; left: 1px;
+			  bottom: 30px;"> FEBRUARY 14, 2018</h6>
 				
 
 		</div> <!-- div for date -->
@@ -168,7 +200,8 @@
 
 
 		</div> <!-- div for "descr" -->
-		</div> <!-- div for img --><div class= "img">
+		</div> <!-- div for contentBox -->
+		<div class= "contentBox">
 
 		<div class="her">
 
@@ -179,8 +212,8 @@
 		<div class= "setdate">
 		<div class="date">
 
-				<h6 class="dateleft" style= "position:relative; right: 242px;
-			  bottom: 20px;"> FEBRUARY 14, 2018</h6>
+				<h6 class="dateleft" style= "position:relative; left: 1px;
+			  bottom: 30px;"> FEBRUARY 14, 2018</h6>
 				
 
 		</div> <!-- div for date -->
@@ -200,7 +233,8 @@
 
 
 		</div> <!-- div for "descr" -->
-		</div> <!-- div for img --><div class= "img">
+		</div> <!-- div for contentBox -->
+		<div class= "contentBox">
 
 		<div class="her">
 
@@ -211,8 +245,8 @@
 		<div class= "setdate">
 		<div class="date">
 
-				<h6 class="dateleft" style= "position:relative; right: 242px;
-			  bottom: 20px;"> FEBRUARY 14, 2018</h6>
+				<h6 class="dateleft" style= "position:relative; left: 1px;
+			  bottom: 30px;"> FEBRUARY 14, 2018</h6>
 				
 
 		</div> <!-- div for date -->
@@ -232,7 +266,8 @@
 
 
 		</div> <!-- div for "descr" -->
-		</div> <!-- div for img --><div class= "img">
+		</div> <!-- div for contentBox -->
+		<div class= "contentBox">
 
 		<div class="her">
 
@@ -243,8 +278,8 @@
 		<div class= "setdate">
 		<div class="date">
 
-				<h6 class="dateleft" style= "position:relative; right: 242px;
-			  bottom: 20px;"> FEBRUARY 14, 2018</h6>
+				<h6 class="dateleft" style= "position:relative; left: 1px;
+			  bottom: 30px;"> FEBRUARY 14, 2018</h6>
 				
 
 		</div> <!-- div for date -->
@@ -264,7 +299,8 @@
 
 
 		</div> <!-- div for "descr" -->
-		</div> <!-- div for img --><div class= "img">
+		</div> <!-- div for contentBox -->
+		<div class= "contentBox">
 
 		<div class="her">
 
@@ -275,8 +311,8 @@
 		<div class= "setdate">
 		<div class="date">
 
-				<h6 class="dateleft" style= "position:relative; right: 242px;
-			  bottom: 20px;"> FEBRUARY 14, 2018</h6>
+				<h6 class="dateleft" style= "position:relative; left: 1px;
+			  bottom: 30px;"> FEBRUARY 14, 2018</h6>
 				
 
 		</div> <!-- div for date -->
@@ -296,8 +332,19 @@
 
 
 		</div> <!-- div for "descr" -->
-		</div> <!-- div for img -->
+		</div> <!-- div for contentBox -->
+		<div class= "videos">
 
+			<div class= "video1">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ncw3f4jgNP4" frameborder="0"></iframe>
+			
+			
+			
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/TX7-nonSfRg" frameborder="0"></iframe>
+ 
+			</div> 
+			
+		</div> 
 </body>
 
 
